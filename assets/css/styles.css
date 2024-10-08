@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background: #FFFAF5;
+}
+
+/* Common */
+
+textarea,
+input,
+button,
+select {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 117px;
+    color: #000958;
+    text-align: center;
+    font-family: Poppins;
+
+}
+
+.desc {
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+}
+
+/* -------------------------------------------------------- header */
+
+.header {
+    padding: 26px 0;
+}
+
+.nav-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signUp-btn {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 18px 32px;
+    border-radius: 9999px;
+    border: 1px solid #000958;
+}
+
+.signUp-btn:hover {
+    background: #000958;
+    color: #fff;
+}
+
+.menu__list {
+    display: flex;
+    column-gap: 36px;
+}
+
+.menu__item {
+    color: #5E6085;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.menu__item:hover {
+    color: #000958;
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------- hero */
+
+.hero {
+    padding-top: 74px;
+    background: #FFFAF5;
+}
+
+.hero-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-media {
+    position: relative;
+}
+
+.hero__img--big {
+    position: relative;
+}
+
+.hero__img {
+    position: relative;
+    max-width: 388px;
+    max-height: 488px;
+    object-fit: cover;
+    background: #FE997B;
+    border-radius: 16px;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.img__decor--right,
+.img__decor--left {
+    position: absolute;
+}
+
+.img__decor--right {
+    width: 50.346px;
+    height: 100.83px;
+    top: 16.7px;
+    left: 377px;
+}
+
+.img__decor--left {
+    bottom: 9.5px;
+    left: -58px;
+    width: 230.962px;
+    height: 230.962px;
+}
+
+.hero__img--small .hero__img {
+    padding: 24px 1px 0 3px;
+    width: 186px;
+    height: 244px;
+    border-radius: 16px;
+    background: #FAA7AD;
+    position: absolute;
+    top: 302px;
+    left: 368px;
+}
+
+.hero--list {
+    position: absolute;
+    left: 129px;
+    top: 426px;
+    width: 250px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    z-index: 1;
+}
+
+.hero--item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 14px;
+}
+
+.hero--item-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #FEC23F;
+}
+
+.info {
+    margin-left: 8.6px;
+}
+
+.info-desc {
+    margin-top: 7px;
+    width: 118px;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+}
+
+.info-desc+.info-desc {
+    margin-top: 6px;
+    width: 39px;
+}
+
+.item__separate--line {
+    content: "";
+    width: 222px;
+    height: 2px;
+    background: #F2F2F2;
+    margin-left: 14px;
+}
+
+.hero-content {
+    margin: 71px 0 0 0;
+    max-width: 517px;
+}
+
+.hero__title {
+    color: #000958;
+    font-family: Sora;
+    font-size: 6.6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.desc {
+    margin-top: 24px;
+    max-width: 391px;
+}
+
+.hero-action {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+}
+
+.hero__btn {
+    min-width: 189px;
+    border-radius: 31px;
+    background: #FF5B2E;
+    /* background: #ccc; */
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.btn__icon {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    background: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: #FF5B2E;
+}
+
+.hero__btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.hero__link {
+    text-decoration: underline;
+    color: #000958;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
