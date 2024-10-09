@@ -48,6 +48,7 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.87;
+    margin-top: 24px;
 }
 
 /* -------------------------------------------------------- header */
@@ -218,8 +219,7 @@ a {
     line-height: 1.15;
 }
 
-.desc {
-    margin-top: 24px;
+.hero-content__desc {
     max-width: 391px;
 }
 
@@ -269,4 +269,72 @@ a {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1;
+}
+
+/* -------------------------------------------------------- about */
+
+.about-body {
+    margin-top: 148px;
+    padding: 53px 0;
+}
+
+.about-content {
+    max-width: 477px;
+}
+
+.about__heading {
+    margin-top: 108px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.about-content__desc {
+    max-width: 431px;
+}
+
+.about__form {
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 34px;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    content: "";
+    display: inline-block;
+}
+
+.checkbox label::before {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    border: 2px solid #48496A;
+}
+
+.checkbox [type="checkbox"]:checked~label::before {
+    background-color: #FF5D31;
+    border-color: #FF5D31;
+}
+
+.checkbox [type="checkbox"]:checked~label::after {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    rotate: -45deg;
 }
