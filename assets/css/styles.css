@@ -90,7 +90,7 @@ a {
 
 .menu__item:hover {
     color: #000958;
-    font-weight: 600;
+    text-shadow: 1px 0 0 currentColor;
 }
 
 /* -------------------------------------------------------- hero */
