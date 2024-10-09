@@ -81,14 +81,14 @@ a {
     column-gap: 36px;
 }
 
-.menu__item {
+.menu__item a {
     color: #5E6085;
     font-family: Poppins;
     font-size: 1.4rem;
     font-weight: 500;
 }
 
-.menu__item:hover {
+.menu__item:hover a {
     color: #000958;
     text-shadow: 1px 0 0 currentColor;
 }
