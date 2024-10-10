@@ -179,6 +179,10 @@ a {
     background: #FEC23F;
 }
 
+.hero--item:last-child .hero--item-img {
+    background: #C6E2FA;
+}
+
 .info {
     margin-left: 8.6px;
 }
