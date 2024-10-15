@@ -50,6 +50,15 @@ a {
     margin-top: 24px;
 }
 
+.section-heading {
+    color: #000958;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
 /* -------------------------------------------------------- header */
 
 .header {
@@ -717,7 +726,6 @@ a {
 
 /* -------------------------------------------------------- staff */
 .staff {
-    height: 7200px;
     text-align: center;
     padding: 130px 0;
 }
@@ -841,4 +849,136 @@ a {
 
 .staff__cta {
     margin-top: 48px;
+}
+
+/* -------------------------------------------------------- pricing */
+
+.pricing {
+    text-align: center;
+    padding: 86px 0;
+    background: #FFF6ED;
+    height: 933px;
+}
+
+.pricing-desc {
+    max-width: 709px;
+    display: inline-block;
+}
+
+.pricing__switch-inner {
+    position: relative;
+}
+
+.pricing__switch {
+    margin-top: 38px;
+    display: inline-block;
+    padding: 23px 0;
+    border-radius: 31px;
+    border: 1px solid #FF5B2E;
+}
+
+.pricing__switch-value {
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+
+/* .pricing__switch-value:hover {
+    background: #FF5B2E;
+} */
+
+input[type="checkbox"]:checked+.pricing__label .pricing__switch-value:nth-child(1),
+input[type="checkbox"]:not(:checked)+.pricing__label .pricing__switch-value:nth-child(2) {
+    background: #FF5B2E;
+    color: #FFF;
+}
+
+.pricing__sale-off {
+    position: absolute;
+    right: 334px;
+    top: 28px;
+}
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 56px 88px;
+    column-gap: 44px;
+}
+
+.pricing-item {
+    text-align: initial;
+    padding-top: 30px;
+    padding-left: 28px;
+    height: 465px;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.pricing__type {
+    color: #FF5B2E;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+    color: #3F4065;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.pricing-item-price {
+    margin-top: 24px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03;
+}
+
+.pricing-item__btn {
+    margin-top: 22px;
+    padding: 14px 64px;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.60);
+    background: #fff;
+    color: #FF5B2E;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.pricing-item__btn:hover {
+    background: #FF5B2E;
+    color: #fff;
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing-item__item {
+    position: relative;
+    margin-left: 26px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 18px;
+}
+
+.pricing-item__item::before {
+    position: absolute;
+    left: -20px;
+    top: 3px;
+    content: "";
+    height: 4px;
+    width: 7px;
+    border-left: 1px solid #FF5B2E;
+    border-bottom: 1px solid #FF5B2E;
+    rotate: -45deg;
 }
