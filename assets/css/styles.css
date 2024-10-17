@@ -41,6 +41,26 @@ a {
     font-family: Poppins;
 }
 
+.cta {
+    margin-top: 44px;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 31px;
+    border: 1px solid rgb(255, 91, 46, 0.6);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    color: #FF5B2E;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.cta:hover {
+    background: #FF5B2E;
+    color: #FFF;
+}
+
 .desc {
     color: #656689;
     font-family: Poppins;
@@ -721,7 +741,8 @@ a {
 
 .service-btn:hover,
 .staff__cta:hover {
-    opacity: 1;
+    background: #FF5B2E;
+    color: #FFF;
 }
 
 /* -------------------------------------------------------- staff */
@@ -1063,4 +1084,201 @@ input[type="checkbox"]:not(:checked)+.pricing__label .pricing__switch-value:nth-
     margin-left: 50%;
     transform: translateX(-50%);
     display: inline-block;
+}
+
+/* -------------------------------------------------------- blog */
+
+.blog-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.blog__heading {
+    margin-top: 169px;
+}
+
+.blog-desc-wrap .desc {
+    margin-top: 134px;
+    margin-right: 73px;
+    width: 350px;
+}
+
+
+.blog-list {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog-item:nth-child(1) .item__media {
+    background: #90CCFF;
+}
+
+.blog-item:nth-child(2) .item__media {
+    background: #FF997E;
+}
+
+.blog-item:nth-child(3) .item__media {
+    background: #5BD6E2;
+}
+
+.blog-item {
+    max-width: 358px;
+}
+
+.item__media {
+    border-radius: 24px;
+    padding-left: 36px;
+    padding-top: 24px;
+}
+
+.blog-item__date {
+    color: #FFF;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21;
+}
+
+.item-img {
+    margin-top: 25px;
+    display: block;
+    max-width: 322px;
+}
+
+.item-title {
+    margin-top: 28px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* -------------------------------------------------------- footer */
+.footer {
+    margin-top: 131px;
+    background: linear-gradient(to right, #fff6ed 40%, transparent 42%);
+}
+
+.footer-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-left {
+    margin-top: 114px;
+}
+
+.footer-form {
+    margin-top: 35px;
+    position: relative;
+}
+
+.footer-email {
+    outline: none;
+    padding: 16px 22px;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    background: #FFF;
+    width: 268px;
+    height: 46px;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.17;
+}
+
+.email-submit-btn {
+    position: absolute;
+    left: 223px;
+    top: 0;
+    padding: 14px;
+    border-radius: 50%;
+    background: #FF5B2E;
+    border: none;
+}
+
+.submit-icon {
+    rotate: 180deg;
+    display: block;
+}
+
+.submit-icon path {
+    stroke: #fff;
+}
+
+.footer__heading--right {
+    margin-top: 68px;
+}
+
+.footer__heading {
+    color: #000958;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.11;
+}
+
+.social-list {
+    margin-top: 16px;
+    padding-bottom: 148px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.social-item {
+    background: #FFF;
+    padding: 9px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-right {
+    position: relative;
+}
+
+.footer-right__body {
+    margin-top: 52px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 58px 137px;
+}
+
+.footer-list {
+    margin-top: 14px;
+}
+
+.footer-item {
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.footer-copyright {
+    margin-top: 52px;
+    left: -107px;
+    position: absolute;
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.17;
+    opacity: 0.5;
 }
